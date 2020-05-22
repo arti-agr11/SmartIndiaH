@@ -1,0 +1,164 @@
+
+
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://www.socialsamosa.com/wp-content/uploads/2015/08/shutterstock_269077082.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    color: #fff;
+    padding-top:18%;
+    padding-bottom:12%;
+    padding-left:12%;
+    padding-right:12%;
+}
+
+
+ .register{
+    background: -webkit-linear-gradient(left,#626464, #f0eff5 );
+    margin-top: 3%;
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+
+
+
+.nav-menu {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-menu.is-scrolling,
+.nav-menu.menu-is-open {
+    background-color: rgb(13, 143, 20);
+    background: -moz-linear-gradient(135deg, rgb(13, 143, 72) 0%, rgb(250, 42, 42) 100%);
+    background: -webkit-linear-gradient(135deg, rgb(28, 143, 13) 0%, rgb(250, 42, 143) 100%);
+    background: linear-gradient(135deg, rgb(24, 143, 13) 0%, rgb(250, 84, 42) 100%);
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-menu.is-scrolling {
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 14px;
+    }
+    .navbar-nav>.nav-item>.nav-link.active:after {
+        content: "";
+        border-bottom: 2px solid #cd99d4;
+        left: 1rem;
+        right: 1rem;
+        bottom: 5px;
+        height: 1px;
+        position: absolute;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-nav.is-scrolling {
+        padding-bottom: 1rem;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+

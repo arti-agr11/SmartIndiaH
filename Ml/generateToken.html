@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body onload="getToken()">
+
+    <script src="js/crypto/enc-base64-min.js"></script>
+    <script src="js/crypto/hmac-md5.js"></script>
+    <script>
+        function getToken() {
+            var uri = 'https://authservice.priaid.ch/login';
+            var computedHash = CryptoJS.HmacMD5(uri, 'Ww3y7L5Tbz4N8Fmg6');
+            var computedHashString = computedHash.toString(CryptoJS.enc.Base64);
+            console.log(computedHashString);
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: "https://authservice.priaid.ch/login",
+                headers: {
+                    'Authorization': 'Bearer ' + 'hefofow574@aeigoemail.com' + ':' + computedHashString
+                },
+                success: function (html) {
+                    console.log(html)
+                    // show_report(html)
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

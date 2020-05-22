@@ -1,0 +1,23 @@
+
+#mid
+{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0px 1px 1px white,
+                 0px 1px 1px rgb(0,0,0,0.1)
+}
+body{
+    background-image: url("https://mdbootstrap.com/img/Photos/Others/images/91.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    font-family: 'Lato';
+    color:white;
+}
+html{
+    height: 100%;
+}
+hr{
+    border-top: 1px solid white;
+    width:500px;
+}
